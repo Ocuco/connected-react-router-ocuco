@@ -1,18 +1,18 @@
-declare module 'connected-react-router' {
-  import * as React from 'react';
-  import { Middleware, Reducer } from 'redux';
-  import { ReactReduxContextValue } from 'react-redux';
-  import { match, matchPath } from 'react-router';
+declare module 'connected-react-router-ocuco' {
   import {
     Action,
     Hash,
     History,
-    Path,
     Location,
-    LocationState,
     LocationDescriptorObject,
+    LocationState,
+    Path,
     Search
   } from 'history';
+  import * as React from 'react';
+  import { ReactReduxContextValue } from 'react-redux';
+  import { match, matchPath } from 'react-router';
+  import { Middleware, Reducer } from 'redux';
 
   type PathParam = Parameters<typeof matchPath>[1];
 
